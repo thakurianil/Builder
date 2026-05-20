@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, User } from 'lucide-react';
 import './Row.css';
 
 const Row = ({ title, properties, onPropertyClick }) => {
@@ -39,7 +39,10 @@ const Row = ({ title, properties, onPropertyClick }) => {
               />
               <div className="row__poster-info">
                 <h3>{property.title}</h3>
-                <p>{property.price}</p>
+                <p className="row__price">{property.price}</p>
+                <div className="row__agent">
+                  <User size={14} /> <span>{property.agentName}</span>
+                </div>
                 <button className="row__details-btn">View Details</button>
               </div>
             </div>

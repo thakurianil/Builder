@@ -115,11 +115,21 @@
   margin: 0;
 }
 
-.row__poster-info p {
+.row__price {
   font-size: 0.9rem;
   color: #46d369;
   font-weight: bold;
   margin: 0;
+}
+
+.row__agent {
+  font-size: 0.8rem;
+  color: #d2d2d2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .row__details-btn {
